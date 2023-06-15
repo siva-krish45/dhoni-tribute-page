@@ -1,0 +1,208 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Droid Sans Mono';
+}
+
+body{
+    display: flex;
+    background-color: #000;
+    color: white;
+    
+}
+
+
+
+.intro{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.intro * {
+    flex-grow: 1;
+}
+
+img{
+    width: 40%;
+    height: 100vh;
+    
+}
+
+.briefsentences{
+    display: flex;
+    flex-direction: column;
+    padding: 0 5%;
+    /* width: 60%; */
+    align-items: center;
+}
+
+.briefsentences .title{
+    font-size: 45px;
+    text-align: center;
+}
+
+.title > span{
+    display: inline-block;
+}
+
+.briefsentences .title > span::first-letter{
+    color: red;
+}
+
+.tagline{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#quote{
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    line-height: 1.5;
+}
+
+.about{
+    width: 100%;
+}
+
+.aboutmsd{
+    width: 85%;
+    margin: 40px  auto  10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutmsd h1, .timeline-area .timeline-msd h2{
+    color: red;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+
+.aboutmsd p{
+    margin-left: 40px;
+    margin-top: 20px;
+    padding-left: 40px;
+    line-height: 1.8;
+    text-indent: -25px;
+}
+
+.aboutmsd p span{
+    display: inline-block;
+    margin-right: 15px;
+    width: 10px;
+    color: rgba(255,0,0,0.8);
+}
+
+.timeline-area{
+    width: 100%;
+    
+    
+}
+
+.timeline-msd{
+    margin: 40px auto 20px;
+    width: 85%;
+    border-bottom: 1px solid white;
+    position: relative;
+}
+
+.timeline-msd .author{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgba(255, 0, 0, 0.918);
+   
+}
+
+.timeline-msd .notification{
+    position: absolute;
+    height: 400px;
+    width: 20vw;
+    left: 40%;
+    top: 10%;
+    font-size: 4vw;
+}
+
+.timeline{
+    
+    width: calc(100% - 35vw);
+    margin: 20px 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    justify-content: space-around;
+    border-left: 10px solid red;
+    
+}
+
+.timeline .entity{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.timeline .entity:last-child{
+    margin-bottom: 15px;
+}
+
+
+
+.timeline .entity .btn{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    left: -22px;
+    border: none;
+    font-size: .6em;
+    font-weight: 900;
+    color: black;
+}
+
+.timeline .entity .content{
+    line-height: 1.5;
+    letter-spacing: 2px;
+    text-indent: -13px;
+    opacity: 0;
+    transition: opacity 0.8s ease; 
+    
+}
+
+.timeline .entity .content::before{
+    content: "\201C";
+    margin-right: 5px;
+}
+
+.timeline .entity .content::after{
+    content: "\201D";
+    margin-left: 5px;
+}
+
+.timeline .entity .show + .content{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
